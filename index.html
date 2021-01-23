@@ -11,50 +11,82 @@
 
 <body>
     <div>
-    
+        <!-- навигация -->
         <header class="navbar navbar-default" id="navbar" role="banner">
+            <!-- Контейнер чтобы ограничивать рамки -->
             <div class="container">
+                <!-- голова навигации (там где логотип (логотип это картинка компаниии)) -->
                 <div class="navbar-header">
                     <div>
+                        <!-- ЛОГОТИП навигационная кнопка и она слева -->
                         <a class="logo navbar-btn pull-left" href="#" title="Главная" rel="home">
                             <img src="img/drupal-coder.svg" alt="Главная" />
                         </a>
                     </div>
                 </div>
 
-                <!--меню -->
-                <div class="navbar-collapse-wrapper">
-                    <div class="navbar-collapse collapse">
-                        <nav role="navigation" class="collapse navbar-collapse">
-                            <ul class="menu nav navbar-nav">
-                                <li>
-                                    <a href="#support">ПОДДЕРЖКА DRUPAL</a>
+                <!-- Это начало менюшечкииииии -->
+                <div class="col-12 col-lg-8 w-100 p-0 bot">
+
+                    <nav class="d-flex flex-row flex-md-column navbar navbar-expand-sm navbar-dark mt-md-2 w-100 bg-nav align-items-md-start">
+                        <!-- navbar -->
+
+                        <div class="collapse navbar-collapse justify-content-center w-100 order-0 order-md-2" id="navbarNavDropdown">
+                            <ul class="navbar-nav w-100 justify-content-between">
+                                <li class="nav-item active">
+                                    <a class="or nav-link text-nowrap" href="#">ПОДДЕРЖКА DRUPAL<span
+                                            class="sr-only">Home</span></a>
                                 </li>
-                                <li>
-                                    <a href="#block-tariffs">АДМИНИСТРИРОВАНИЕ</a>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        АДМИНИСТРИРОВАНИЕ
+                                    </a>
+                                    <div class="dropdown-menu show p-0" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">МИГРАЦИЯ</a>
+                                        <a class="dropdown-item" href="#">БЭКАПЫ</a>
+                                        <a class="dropdown-item" href="#">АУДИТ БЕЗОПАСНОСТИ</a>
+                                        <a class="dropdown-item" href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                                        <a class="dropdown-item" href="#">ПЕРЕЕЗД НА HTTPS</a>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="#cases">ПРОДВИЖЕНИЕ</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">ПРОДВИЖЕНИЕ</a>
                                 </li>
-                                <li>
-                                    <a href="#">РЕКЛАМА</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">РЕКЛАМА</a>
                                 </li>
-                                <li>
-                                    <a href="#reviews">О НАС</a>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        О НАС
+                                    </a>
+                                    <div class="dropdown-menu show p-0" aria-labelledby="navbarDropdownMenuLink1">
+                                        <a class="dropdown-item" href="#">КОМАНДА</a>
+                                        <a class="dropdown-item" href="#">DRUPALGIVE</a>
+                                        <a class="dropdown-item" href="#">БЛОГ</a>
+                                        <a class="dropdown-item" href="#">КУРСЫ DRUPAL</a>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a href="#reviews">ПРОЕКТЫ</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">ПРОЕКТЫ</a>
                                 </li>
-                                <li>
-                                    <a href="#contacts">КОНТАКТЫ</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">КОНТАКТЫ</a>
                                 </li>
                             </ul>
-                        </nav>
-                    </div>
+                        </div>
+
+                        <img class="navbar-brand logo order-1 order-md-0" src="img/drupal-coder.svg" alt="Главная">
+
+                        <button class="navbar-toggler order-2 order-md-1" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                    </nav>
+
                 </div>
-                
-                
-                <!--  МОБИЛЬНАЯ ВЕРСИЯ -->
+
+
+                <!-- ЭТО КНОПКА ДЛЯ МОБИЛЬНОЙ ВЕРСИИ (НАВИГАЦИЯ) -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Навигация</span>
                     <span class="icon-bar"></span>
@@ -64,31 +96,40 @@
             </div>
         </header>
 
+        <!-- Задний фон + ачивменты + основной текст + кнопка "Тарифы" -->
         <div>
             <div class="block-main">
+                <!-- задний фон - видео + инопришеленец -->
                 <div class="block-main-background">
                     <video playsinline autoplay="autoplay" loop="" class="fillWidth" preload="auto" muted>
                         <source src="img/video.mp4" type="video/mp4">
                     </video>
                 </div>
 
+                <!-- рамки для блока -->
                 <div class="container">
                     <div class="row">
+                        <!-- левая часть блока -->
                         <div class="col-md-6">
                             <h1 class="page-title">Поддержка <br> сайтов на Drupal</h1>
                             <div class="support-main-description">
-                                Сопровождение и поддержка сайтов <br>
-                                на CMS Drupal любых версий и запущенности
+                                Сопровождение и поддержка сайтов <br> на CMS Drupal любых версий и запущенности
                             </div>
+                            <!-- кнопка тарифы -->
                             <div class="block-main-wrapper">
                                 <a href="#block-tariffs" class="block-main-btn">Тарифы</a>
                             </div>
                         </div>
+                        <!-- правая часть блока -->
                         <div class="col-md-6">
                             <div class="row support-achievements">
+                                <!-- 6 блоков справа -->
                                 <div class="col-md-4 col-sm-4 col-xs-6 support-achievement">
+                                    <!-- оболочка для ачивки -->
                                     <div class="support-achievement-wrapper">
+                                        <!-- Первый, титульный текст -->
                                         <div class="support-achievement-title">#1 <img src="img/cup.png"></div>
+                                        <!-- Описание -->
                                         <div class="support-achievement-description">
                                             Drupal-разработчик <br> в России по версии <br> Рейтинга Рунета
                                         </div>
@@ -142,42 +183,43 @@
         </div>
 
         <div>
+            <!-- 13 лет - эксперты -->
             <article role="article" about="#main">
                 <div>
+                    <!-- 13 лет.... -->
                     <div class="competencies">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h2 class="block-title">13 лет совершенствуем <br> компетенции в Drupal <br>
-                                        поддержке!</h2>
+                                    <!-- Основной текст -->
+                                    <h2 class="block-title">13 лет совершенствуем <br> компетенции в Drupal <br> поддержке!
+                                    </h2>
+                                    <!-- Описание -->
                                     <div class="competencies-description">
-                                        Разрабатываем и оптимизируем модули, расширяем <br> функциональность
-                                        сайтов, обновляем дизайн
+                                        Разрабатываем и оптимизируем модули, расширяем <br> функциональность сайтов, обновляем дизайн
                                     </div>
                                 </div>
                             </div>
                             <div class="row row-flex competencies-row">
-                                <!-- 1 -->
+                                <!-- 1 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-1.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-1.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
-                                                Добавление <br> информации на сайт,<br> создание новых <br>
-                                                разделов
+                                                Добавление <br> информации на сайт,<br> создание новых <br> разделов
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 2 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-2.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-2.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Разработка <br> и оптимизация <br> модулей сайта
@@ -185,12 +227,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 3 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-3.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-3.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Интеграция с CRM, <br> 1C, платежными <br> системами, любыми
@@ -199,12 +241,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 4 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-4.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-4.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Любые доработки <br> функционала <br> и дизайна
@@ -212,12 +254,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 5 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-5.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-5.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Аудит и мониторинг <br> безопасности Drupal <br> сайтов
@@ -225,12 +267,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 6 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-6.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-6.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Миграция, импорт <br> контента и апгрейд <br> Drupal
@@ -238,12 +280,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 7 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-7.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-7.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Оптимизация <br> и ускорение <br> Drupal-сайтов
@@ -251,12 +293,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 8 из 8 -->
                                 <div class="col-sm-3 col-xs-6">
                                     <div class="competency">
                                         <div class="competency-wrapper">
                                             <div class="competency-header">
-                                                <div class="competency-icon"><img src="img/competency-8.svg"
-                                                        class="img-responsive"></div>
+                                                <div class="competency-icon"><img src="img/competency-8.svg" class="img-responsive"></div>
                                             </div>
                                             <div class="competency-body">
                                                 Веб-маркетинг, <br> консультации <br> и работы по SEO
@@ -272,10 +314,12 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
+                                    <!-- Заголовок -->
                                     <h2 class="block-title">Поддержка <br> от Drupal-coder</h2>
                                 </div>
                             </div>
                             <div class="row row-flex advantages-row">
+                                <!-- 1 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -284,31 +328,29 @@
                                                 <div class="advantage-title">Постановка задачи по Email</div>
                                             </div>
                                             <div class="advantage-body">
-                                                Удобная и привычная модель постановки задач, при которой задачи
-                                                фиксируются и никогда не теряются.
+                                                Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support1.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support1.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 2 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
                                             <div class="advantage-header">
                                                 <div class="advantage-num">02.</div>
-                                                <div class="advantage-title">Система Helpdesk – отчетность,
-                                                    прозрачность</div>
+                                                <div class="advantage-title">Система Helpdesk – отчетность, прозрачность
+                                                </div>
                                             </div>
                                             <div class="advantage-body">
-                                                Возможность посмотреть все заявки в работе и отработанные часы в
-                                                личном кабинете через браузер.
+                                                Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support2.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support2.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 3 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -318,14 +360,13 @@
                                                 </div>
                                             </div>
                                             <div class="advantage-body">
-                                                Возможность организации расширенной техподдержки с 6:00 до 22:00
-                                                без выходных.
+                                                Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support3.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support3.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 4 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -334,14 +375,13 @@
                                                 <div class="advantage-title">Персональный менеджер проекта</div>
                                             </div>
                                             <div class="advantage-body">
-                                                Ваш менеджер проекта всегда в курсе текущего состояния проекта и
-                                                в любой момент готов ответить на любые вопросы.
+                                                Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support4.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support4.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 5 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -350,14 +390,13 @@
                                                 <div class="advantage-title">Удобные способы оплаты</div>
                                             </div>
                                             <div class="advantage-body">
-                                                Безналичный расчет по договору или электронные деньги: WebMoney,
-                                                Яндекс.Деньги, Paypal.
+                                                Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support5.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support5.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 6 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -366,14 +405,13 @@
                                                 <div class="advantage-title">Работаем с SLA <br> и NDA</div>
                                             </div>
                                             <div class="advantage-body">
-                                                Работа в рамках соглашений о конфиденциальности и об уровне
-                                                качества работ.
+                                                Работа в рамках соглашений о конфиденциальности и об уровне качества работ.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support6.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support6.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 7 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -384,11 +422,11 @@
                                             <div class="advantage-body">
                                                 Надежные штатные специалисты, никаких фрилансеров.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support7.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support7.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 8 из 8 -->
                                 <div class="col-sm-6 col-md-3 col-xs-12 advantage-col">
                                     <div class="advantage">
                                         <div class="advantage-wrapper">
@@ -399,31 +437,31 @@
                                             <div class="advantage-body">
                                                 Консультации по телефону, скайпу, в месенджерах.
                                             </div>
-                                            <div class="advantage-icon"><img src="img/support8.svg"
-                                                    class="img-responsive"></div>
+                                            <div class="advantage-icon"><img src="img/support8.svg" class="img-responsive"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Эксперты  -->
+                    <!-- Эксперты в друпал -->
                     <div class="expertise">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-6 col-xs-12 col-md-offset-6">
                                     <div class="row">
                                         <div class="col-md-12">
+                                            <!-- Заголовок -->
                                             <h2 class="block-title">Экспертиза в Drupal,<br> опыт 14 лет!</h2>
                                         </div>
                                     </div>
+                                    <!-- Блоки -->
                                     <div class="row row-flex expertise-row">
                                         <!-- Левый -->
                                         <div class="col-sm-6 col-xs-12 expertise-col">
                                             <div class="expertise-item">
                                                 <div class="expertise-item-body">
-                                                    Только системный подход – контроль версий, резервирование и
-                                                    тестирование!
+                                                    Только системный подход – контроль версий, резервирование и тестирование!
                                                 </div>
                                             </div>
                                         </div>
@@ -431,8 +469,7 @@
                                         <div class="col-sm-6 col-xs-12 expertise-col">
                                             <div class="expertise-item">
                                                 <div class="expertise-item-body">
-                                                    Только Drupal сайты, не берем на поддержку сайты на других
-                                                    CMS!
+                                                    Только Drupal сайты, не берем на поддержку сайты на других CMS!
                                                 </div>
                                             </div>
                                         </div>
@@ -445,7 +482,7 @@
                 </div>
             </article>
 
-            <!-- тарифы -->
+            <!-- Блок тарифы -->
             <section id="block-tariffs">
                 <h2 class="block-title">Тарифы</h2>
                 <div>
@@ -464,8 +501,7 @@
                                                 <div class="tariff-body-item">Консультации и работы по SEO</div>
                                                 <div class="tariff-body-item">Услуги дизайнера</div>
                                                 <div class="tariff-body-item">Стандартное время реакции</div>
-                                                <div class="tariff-body-item">Неиспользованные оплаченные часы
-                                                    переносятся на следующий месяц</div>
+                                                <div class="tariff-body-item">Неиспользованные оплаченные часы переносятся на следующий месяц</div>
                                             </div>
                                             <div class="tariff-footer">
                                                 <a href="#forma" class="contact-form tariff-footer-btn">Оставить
@@ -507,13 +543,12 @@
                                                 <div class="tariff-body-item">Предоплата от 100 часов</div>
                                                 <div class="tariff-body-item">Консультации и работы по SEO</div>
                                                 <div class="tariff-body-item">Услуги дизайнера</div>
-                                                <div class="tariff-body-item">Максимальное время реакции - в день
-                                                    обращения</div>
+                                                <div class="tariff-body-item">Максимальное время реакции - в день обращения
+                                                </div>
                                                 <div class="tariff-body-item">Неиспользованные часы не переносятся</div>
                                             </div>
                                             <div class="tariff-footer">
-                                                <a href="#block-podderzhkasaytovkontaktnayaforma"
-                                                    class="contact-form tariff-footer-btn">Оставить заявку!</a>
+                                                <a href="#block-podderzhkasaytovkontaktnayaforma" class="contact-form tariff-footer-btn">Оставить заявку!</a>
                                             </div>
                                         </div>
                                     </div>
@@ -522,8 +557,7 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="tariffs-ps">
-                                        Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные
-                                        условия!
+                                        Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
                                         <a href="#" class="tariffs-link">Получить индивидуальный тариф</a>
                                     </div>
                                 </div>
@@ -534,7 +568,7 @@
             </section>
 
 
-            
+
 
             <!-- Блок команда -->
             <section class="views-element-container container block block-views block-views-blockteam-team-new clearfix" id="block-views-block-team-new">
@@ -542,32 +576,29 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2 class="block-title" >Наши профессиональные разработчики выполняют быстро любые задачи </h2>
+                            <h2 class="block-title">Наши профессиональные разработчики выполняют быстро любые задачи </h2>
                         </div>
                     </div>
                     <div class="row row-flex competencies-row">
-                        
+
                         <div class="col-sm-4 col-xs-6">
                             <div class="competency">
                                 <div class="competency-wrapper">
                                     <div class="competency-header">
-                                        <div class="competency-icon"><img src="img/competency-20.svg"
-                                                class="img-responsive"></div>
+                                        <div class="competency-icon"><img src="img/competency-20.svg" class="img-responsive"></div>
                                     </div>
                                     <div class="competency-body">
-                                        Добавление <br> информации на сайт,<br> создание новых <br>
-                                        разделов
+                                        Добавление <br> информации на сайт,<br> создание новых <br> разделов
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
+
                         <div class="col-sm-3 col-xs-6">
                             <div class="competency">
                                 <div class="competency-wrapper">
                                     <div class="competency-header">
-                                        <div class="competency-icon"><img src="img/competency-21.svg"
-                                                class="img-responsive"></div>
+                                        <div class="competency-icon"><img src="img/competency-21.svg" class="img-responsive"></div>
                                     </div>
                                     <div class="competency-body">
                                         Разработка <br> и оптимизация <br> модулей сайта
@@ -575,13 +606,12 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-sm-3 col-xs-6">
                             <div class="competency">
                                 <div class="competency-wrapper">
                                     <div class="competency-header">
-                                        <div class="competency-icon"><img src="img/competency-22.svg"
-                                                class="img-responsive"></div>
+                                        <div class="competency-icon"><img src="img/competency-22.svg" class="img-responsive"></div>
                                     </div>
                                     <div class="competency-body">
                                         Интеграция с CRM, <br> 1C, платежными <br> системами, любыми
@@ -598,15 +628,14 @@
                 <!-- 11111-->
                 <h2 class="block-title">Команда</h2>
                 <div class="form-group">
-                    <div class="view view-team view-id-team view-display-id-team_new"></div>
+                    <div class="view view-team view-id-team view-display-id-team_new">
                         <div class="view-content">
                             <div class="col-xs-6 col-sm-6 col-md-4 views-row">
                                 <div class="user-teaser">
                                     <div class="user-teaser-photo">
                                         <img src="img/IMG_2472_0.jpg" typeof="Image" class="img-responsive" />
                                     </div>
-                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org"
-                                            target="_blank">Сергей Синица</a></div>
+                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org" target="_blank">Сергей Синица</a></div>
                                     <div class="user-teaser-post">руководитель отдела веб-разработки, канд. техн. наук, заместитель директора</div>
                                 </div>
                             </div>
@@ -615,8 +644,7 @@
                                     <div class="user-teaser-photo">
                                         <img src="img/IMG_2539_0.jpg" typeof="Image" class="img-responsive" />
                                     </div>
-                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org"
-                                            target="_blank">Роман Агабеков</a></div>
+                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org" target="_blank">Роман Агабеков</a></div>
                                     <div class="user-teaser-post">Руководитель отдела DevOPS, директор</div>
                                 </div>
                             </div>
@@ -625,8 +653,7 @@
                                     <div class="user-teaser-photo">
                                         <img src="img/IMG_2474_1.jpg" typeof="Image" class="img-responsive" />
                                     </div>
-                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org"
-                                            target="_blank">Алексей Синица</a></div>
+                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org" target="_blank">Алексей Синица</a></div>
                                     <div class="user-teaser-post">Руководитель отдела поддержки сайтов</div>
                                 </div>
                             </div>
@@ -635,8 +662,7 @@
                                     <div class="user-teaser-photo">
                                         <img src="img/IMG_2522_0.jpg" typeof="Image" class="img-responsive" />
                                     </div>
-                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org"
-                                            target="_blank">Дарья Бочкарёва</a></div>
+                                    <div class="user-teaser-name"><a href="#" title="Профиль на drupal.org" target="_blank">Дарья Бочкарёва</a></div>
                                     <div class="user-teaser-post">SEO, веб-маркетинг</div>
                                 </div>
                             </div>
@@ -651,13 +677,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="inverse view view-blog view-id-blog view-display-id-block_1">
+                            <div class="more-link form-group"><a href="#">Вся команда</a></div>
+                        </div>
                     </div>
-                </div>
             </section>
 
-            <!-- последние кейсы -->
-            <section class="container block block-views block-views-blockblog-block-1"
-                id="block-views-block-blog-block-1">
+            <!-- Блок последние кейсы -->
+            <section class="container block block-views block-views-blockblog-block-1" id="block-views-block-blog-block-1">
                 <h2 id="cases" class="block-title">Последние кейсы</h2>
                 <div class="form-group">
                     <div class="inverse view view-blog view-id-blog view-display-id-block_1">
@@ -672,8 +699,7 @@
                                         <div class="keys-date">22.04.2019</div>
                                     </div>
                                     <div class="keys-content">
-                                        <div
-                                            class="field field--name-body  field--label-hidden field--item">
+                                        <div class="field field--name-body  field--label-hidden field--item">
                                             <p>Эти слова никто не читает, не читайте и Вы</p>
                                         </div>
                                     </div>
@@ -691,8 +717,7 @@
                                 </div>
                             </article>
 
-                            <article data-history-node-id="263" role="article" about="#"
-                                class="blog is-promoted keys-1">
+                            <article data-history-node-id="263" role="article" about="#" class="blog is-promoted keys-1">
                                 <div class="keys-wrapper" style="background-image: url(img/image\ 8.3.svg)">
                                     <div class="keys-img" style="background-image: url(img/image\ 8.3.svg)"></div>
                                     <div class="keys-header">
@@ -731,8 +756,7 @@
                                         </div>
                                     </div>
                                     <div class="keys-content">
-                                        <div
-                                            class="field field--name-body  field--label-hidden field--item">
+                                        <div class="field field--name-body  field--label-hidden field--item">
                                             <p>Как много в жизни огорчений</p>
                                         </div>
                                     </div>
@@ -770,15 +794,13 @@
                 </div>
             </section>
 
-            <!-- отзывы -->
-            <section class="views-element-container block block-views block-views-blocktestimonials-block-1"
-                id="block-views-block-testimonials-block-1">
+            <!-- Блок отзывы -->
+            <section class="views-element-container block block-views block-views-blocktestimonials-block-1" id="block-views-block-testimonials-block-1">
                 <h2 id="reviews" class="block-title">Отзывы</h2>
                 <div class="form-group">
                     <div class="container view view-testimonials view-id-testimonials view-display-id-block_1">
                         <div class="view-content">
-                            <div id="slick-views-testimonials-block-1-1"
-                                class="slick slick--view--testimonials slick--view--testimonials--block-1 slick--optionset--reviews">
+                            <div id="slick-views-testimonials-block-1-1" class="slick slick--view--testimonials slick--view--testimonials--block-1 slick--optionset--reviews">
                                 <div id="slick-views-testimonials-block-1-1-slider" class="slick__slider">
                                     <div class="slick__slide slide slide--0">
                                         <div class="views-field views-field-field-project-logo">
@@ -787,83 +809,56 @@
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content-title">Команда Drupal Coder вызвала только
-                                                положительные
-                                                впечатления!</div>
+                                            <div class="field-content-title">Команда Drupal Coder вызвала только положительные впечатления!
+                                            </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Нуреев Александр, менеджер проекта Winamp Russian
-                                                Community</div>
+                                            <div class="field-content">Нуреев Александр, менеджер проекта Winamp Russian Community
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--1">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/cableman_ru.png" alt="cableman.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/cableman_ru.png" alt="cableman.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Здравствуйте, друзья.
-                                                Рассказ мой будет об экскурсии от Экскаватур " Набережная Первых. От первого моста до первого ледокола".
-                                                
-                                                Мне очень нравятся экскурсии -прогулки по городу, а когда маршрут ещё будет проходить по набережной, то сомнений ни на секунду не возникает, надо идти. Иду! Непременно иду!
-                                                
-                                                Холода отступили. На улице всего то -7 градусов. Снежный Петербург красив, в городе царит особая зимняя атмосфера, белоснежная романтика.
-                                                
-                                                Место встречи нашей экскурсионной группы было назначено у Андреевского Собора на Васильевском острове.
-                                                
-                                                Одно из моих любимейших мест города - 6-я и 7 -я линии Васильевского острова. Приехала я специально за полчаса до начала экскурсии, чтоб не спеша пройти к Храму по пешеходной улице от памятника Конки.
-                                                
-                                                Вот он, красавиц Собор. Обошла его, зашла внутрь. Сделала несколько фотографий.
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum doloremque reprehenderit eos cupiditate? Dolore sint magni doloribus itaque nobis veniam, sed, dicta distinctio voluptatem officia esse
+                                                voluptas, sapiente quaerat.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Подошла к памятнику первому кавалеру ордена Андрея Первозванного, первому русскому адмиралу - графу Фёдору Головину.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio molestiae pariatur voluptates minus sequi voluptate?
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--2">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/lpcma_rus_v4.jpg" alt="lpcma.tsu.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/lpcma_rus_v4.jpg" alt="lpcma.tsu.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Debitis alias repudiandae optio obcaecati perspiciatis
-                                                aspernatur aperiam architecto expedita.
-                                                Accusantium,
-                                                ipsa a quo hic tempora odio ratione iure voluptatibus temporibus ab
-                                                molestias aliquid sequi aperiam perspiciatis quibusdam nesciunt ex
-                                                beatae praesentium.
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias repudiandae optio obcaecati perspiciatis aspernatur aperiam architecto expedita. Accusantium, ipsa a quo hic tempora odio ratione iure voluptatibus
+                                                temporibus ab molestias aliquid sequi aperiam perspiciatis quibusdam nesciunt ex beatae praesentium.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur adipisicing.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--3">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/nashagazeta_ch.png" alt="nashagazeta.ch"
-                                                    class="img-responsive" />
+                                                <img src="img/nashagazeta_ch.png" alt="nashagazeta.ch" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Provident ex qui odio quisquam placeat iste? Odit modi
-                                                sit ratione officiis,
-                                                voluptate voluptates aliquid illum ad iure omnis quibusdam voluptas
-                                                provident! Sit obcaecati, iusto voluptate consequatur maiores autem
-                                                dolor itaque sed dolore
-                                                saepe repellendus iste, corrupti possimus nam quis blanditiis odit
-                                                ipsum, sapiente officiis quia? Inventore architecto placeat ad
-                                                assumenda? Eius tempora iste
-                                                praesentium veritatis voluptate error!
-                                                Tempora, soluta est reprehenderit facere atque quos ad laborum quasi,
-                                                mollitia distinctio aut? Iusto!
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex qui odio quisquam placeat iste? Odit modi sit ratione officiis, voluptate voluptates aliquid illum ad iure omnis quibusdam voluptas provident!
+                                                Sit obcaecati, iusto voluptate consequatur maiores autem dolor itaque sed dolore saepe repellendus iste, corrupti possimus nam quis blanditiis odit ipsum, sapiente officiis quia? Inventore architecto placeat
+                                                ad assumenda? Eius tempora iste praesentium veritatis voluptate error! Tempora, soluta est reprehenderit facere atque quos ad laborum quasi, mollitia distinctio aut? Iusto!
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
@@ -873,26 +868,18 @@
                                     <div class="slick__slide slide slide--4">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/logo-estee.png" alt="estee-design.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/logo-estee.png" alt="estee-design.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing elit.
-                                                Nihil, officia distinctio! Minima harum esse ullam vero rem reiciendis
-                                                praesentium totam quia, ad rerum temporibus dolor, voluptatem eius
-                                                facere ipsam.
-                                                Nulla sit ipsum et. Deleniti sit obcaecati quae rem voluptas,
-                                                accusantium possimus quasi et vitae rerum numquam natus.
-                                                Amet, maiores? Dolorum sint eos eligendi doloribus eaque harum, facilis
-                                                nisi nam, omnis a, molestiae sit quae.
+                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia distinctio! Minima harum esse ullam vero rem reiciendis praesentium totam quia, ad rerum temporibus dolor, voluptatem eius facere ipsam.
+                                                Nulla sit ipsum et. Deleniti sit obcaecati quae rem voluptas, accusantium possimus quasi et vitae rerum numquam natus. Amet, maiores? Dolorum sint eos eligendi doloribus eaque harum, facilis nisi nam, omnis
+                                                a, molestiae sit quae.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Rem optio eveniet consectetur labore quibusdam
-                                                cupiditate.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio eveniet consectetur labore quibusdam cupiditate.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--5">
@@ -902,20 +889,10 @@
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing elit. Atque optio minus quia quidem maiores provident vero,
-                                                officia hic harum
-                                                laboriosam architecto magnam error dicta eveniet dolor. Repellendus
-                                                autem mollitia neque necessitatibus accusantium recusandae aut voluptas
-                                                perspiciatis possimus sint,
-                                                at voluptates laudantium officia facilis. Officia iste ipsam
-                                                voluptatibus eligendi cupiditate, fuga suscipit facilis enim culpa
-                                                dolore quas sed pariatur quibusdam illo eum
-                                                voluptatum accusantium quis ab rem aspernatur repudiandae? Voluptatum
-                                                quo accusantium ipsa assumenda sit delectus quas tempore fugiat officiis
-                                                quam necessitatibus,
-                                                perspiciatis ratione id pariatur dignissimos dolore repellat expedita.
-                                                Reiciendis deserunt vel eum recusandae unde modi dolorem odio et quam.
+                                            <div class="field-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque optio minus quia quidem maiores provident vero, officia hic harum laboriosam architecto magnam error dicta eveniet dolor. Repellendus autem mollitia
+                                                neque necessitatibus accusantium recusandae aut voluptas perspiciatis possimus sint, at voluptates laudantium officia facilis. Officia iste ipsam voluptatibus eligendi cupiditate, fuga suscipit facilis enim
+                                                culpa dolore quas sed pariatur quibusdam illo eum voluptatum accusantium quis ab rem aspernatur repudiandae? Voluptatum quo accusantium ipsa assumenda sit delectus quas tempore fugiat officiis quam necessitatibus,
+                                                perspiciatis ratione id pariatur dignissimos dolore repellat expedita. Reiciendis deserunt vel eum recusandae unde modi dolorem odio et quam.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
@@ -929,35 +906,26 @@
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur,
-                                                adipisicing elit. In sapiente quod unde nostrum nesciunt soluta deleniti
-                                                et culpa,
-                                                mollitia est voluptatibus aperiam totam!
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In sapiente quod unde nostrum nesciunt soluta deleniti et culpa, mollitia est voluptatibus aperiam totam!
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Reiciendis.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--7">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/logo.png" alt="personal-writer.com"
-                                                    class="img-responsive" />
+                                                <img src="img/logo.png" alt="personal-writer.com" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing elit.
-                                                Ut iure perferendis culpa facilis eveniet, asperiores repellat fugiat
-                                                tempora voluptates assumenda ab.
-                                                Eum iusto, nesciunt distinctio provident deleniti ullam sequi libero!
+                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut iure perferendis culpa facilis eveniet, asperiores repellat fugiat tempora voluptates assumenda ab. Eum iusto, nesciunt distinctio provident deleniti
+                                                ullam sequi libero!
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                                         </div>
                                     </div>
 
@@ -968,77 +936,56 @@
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Команда Drupal Coder вызвала только положительные
-                                                впечатления!</div>
+                                            <div class="field-content">Команда Drupal Coder вызвала только положительные впечатления!
+                                            </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Нуреев Александр, менеджер проекта Winamp Russian
-                                                Community</div>
+                                            <div class="field-content">Нуреев Александр, менеджер проекта Winamp Russian Community
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--9">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/cableman_ru.png" alt="cableman.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/cableman_ru.png" alt="cableman.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Blanditiis illum doloremque reprehenderit eos
-                                                cupiditate?
-                                                Dolore sint magni doloribus itaque nobis veniam, sed, dicta distinctio
-                                                voluptatem officia esse voluptas, sapiente quaerat.
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum doloremque reprehenderit eos cupiditate? Dolore sint magni doloribus itaque nobis veniam, sed, dicta distinctio voluptatem officia esse
+                                                voluptas, sapiente quaerat.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Atque odio molestiae pariatur voluptates minus sequi
-                                                voluptate?</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio molestiae pariatur voluptates minus sequi voluptate?
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--10">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/lpcma_rus_v4.jpg" alt="lpcma.tsu.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/lpcma_rus_v4.jpg" alt="lpcma.tsu.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Debitis alias repudiandae optio obcaecati perspiciatis
-                                                aspernatur aperiam architecto expedita.
-                                                Accusantium,
-                                                ipsa a quo hic tempora odio ratione iure voluptatibus temporibus ab
-                                                molestias aliquid sequi aperiam perspiciatis quibusdam nesciunt ex
-                                                beatae praesentium.
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis alias repudiandae optio obcaecati perspiciatis aspernatur aperiam architecto expedita. Accusantium, ipsa a quo hic tempora odio ratione iure voluptatibus
+                                                temporibus ab molestias aliquid sequi aperiam perspiciatis quibusdam nesciunt ex beatae praesentium.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur adipisicing.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--11">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/nashagazeta_ch.png" alt="nashagazeta.ch"
-                                                    class="img-responsive" />
+                                                <img src="img/nashagazeta_ch.png" alt="nashagazeta.ch" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Provident ex qui odio quisquam placeat iste? Odit modi
-                                                sit ratione officiis,
-                                                voluptate voluptates aliquid illum ad iure omnis quibusdam voluptas
-                                                provident! Sit obcaecati, iusto voluptate consequatur maiores autem
-                                                dolor itaque sed dolore
-                                                saepe repellendus iste, corrupti possimus nam quis blanditiis odit
-                                                ipsum, sapiente officiis quia? Inventore architecto placeat ad
-                                                assumenda? Eius tempora iste
-                                                praesentium veritatis voluptate error!
-                                                Tempora, soluta est reprehenderit facere atque quos ad laborum quasi,
-                                                mollitia distinctio aut? Iusto!
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex qui odio quisquam placeat iste? Odit modi sit ratione officiis, voluptate voluptates aliquid illum ad iure omnis quibusdam voluptas provident!
+                                                Sit obcaecati, iusto voluptate consequatur maiores autem dolor itaque sed dolore saepe repellendus iste, corrupti possimus nam quis blanditiis odit ipsum, sapiente officiis quia? Inventore architecto placeat
+                                                ad assumenda? Eius tempora iste praesentium veritatis voluptate error! Tempora, soluta est reprehenderit facere atque quos ad laborum quasi, mollitia distinctio aut? Iusto!
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
@@ -1048,26 +995,18 @@
                                     <div class="slick__slide slide slide--12">
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
-                                                <img src="img/logo-estee.png" alt="estee-design.ru"
-                                                    class="img-responsive" />
+                                                <img src="img/logo-estee.png" alt="estee-design.ru" class="img-responsive" />
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing elit.
-                                                Nihil, officia distinctio! Minima harum esse ullam vero rem reiciendis
-                                                praesentium totam quia, ad rerum temporibus dolor, voluptatem eius
-                                                facere ipsam.
-                                                Nulla sit ipsum et. Deleniti sit obcaecati quae rem voluptas,
-                                                accusantium possimus quasi et vitae rerum numquam natus.
-                                                Amet, maiores? Dolorum sint eos eligendi doloribus eaque harum, facilis
-                                                nisi nam, omnis a, molestiae sit quae.
+                                            <div class="field-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, officia distinctio! Minima harum esse ullam vero rem reiciendis praesentium totam quia, ad rerum temporibus dolor, voluptatem eius facere ipsam.
+                                                Nulla sit ipsum et. Deleniti sit obcaecati quae rem voluptas, accusantium possimus quasi et vitae rerum numquam natus. Amet, maiores? Dolorum sint eos eligendi doloribus eaque harum, facilis nisi nam, omnis
+                                                a, molestiae sit quae.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
-                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur
-                                                adipisicing elit. Rem optio eveniet consectetur labore quibusdam
-                                                cupiditate.</div>
+                                            <div class="field-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio eveniet consectetur labore quibusdam cupiditate.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="slick__slide slide slide--13">
@@ -1077,20 +1016,10 @@
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-text">
-                                            <div class="field-content">Lorem ipsum dolor, sit amet consectetur
-                                                adipisicing elit. Atque optio minus quia quidem maiores provident vero,
-                                                officia hic harum
-                                                laboriosam architecto magnam error dicta eveniet dolor. Repellendus
-                                                autem mollitia neque necessitatibus accusantium recusandae aut voluptas
-                                                perspiciatis possimus sint,
-                                                at voluptates laudantium officia facilis. Officia iste ipsam
-                                                voluptatibus eligendi cupiditate, fuga suscipit facilis enim culpa
-                                                dolore quas sed pariatur quibusdam illo eum
-                                                voluptatum accusantium quis ab rem aspernatur repudiandae? Voluptatum
-                                                quo accusantium ipsa assumenda sit delectus quas tempore fugiat officiis
-                                                quam necessitatibus,
-                                                perspiciatis ratione id pariatur dignissimos dolore repellat expedita.
-                                                Reiciendis deserunt vel eum recusandae unde modi dolorem odio et quam.
+                                            <div class="field-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque optio minus quia quidem maiores provident vero, officia hic harum laboriosam architecto magnam error dicta eveniet dolor. Repellendus autem mollitia
+                                                neque necessitatibus accusantium recusandae aut voluptas perspiciatis possimus sint, at voluptates laudantium officia facilis. Officia iste ipsam voluptatibus eligendi cupiditate, fuga suscipit facilis enim
+                                                culpa dolore quas sed pariatur quibusdam illo eum voluptatum accusantium quis ab rem aspernatur repudiandae? Voluptatum quo accusantium ipsa assumenda sit delectus quas tempore fugiat officiis quam necessitatibus,
+                                                perspiciatis ratione id pariatur dignissimos dolore repellat expedita. Reiciendis deserunt vel eum recusandae unde modi dolorem odio et quam.
                                             </div>
                                         </div>
                                         <div class="views-field views-field-field-report-author">
@@ -1100,11 +1029,9 @@
                                 </div>
                                 <nav class="slick__arrow">
                                     <div class="slick__arrow-wrapper">
-                                        <button class="slick-prev slick-arrow slprev" aria-label="Previous"
-                                            type="button">Previous</button>
+                                        <button class="slick-prev slick-arrow slprev" aria-label="Previous" type="button">Previous</button>
                                         <span class="slick-slide-num"></span>
-                                        <button type="button" class="slick-next slick-arrow slnext" aria-label="Next"
-                                            role="button">Next</button>
+                                        <button type="button" class="slick-next slick-arrow slnext" aria-label="Next" role="button">Next</button>
                                     </div>
                                 </nav>
                             </div>
@@ -1113,15 +1040,12 @@
                 </div>
             </section>
 
-            <!-- Блок с нами работают -->
-            <section class="views-element-container block block-views block-views-blockour-clients-block-1"
-                id="block-views-block-our-clients">
+            <section class="views-element-container block block-views block-views-blockour-clients-block-1" id="block-views-block-our-clients">
                 <h2 class="block-title">С нами работают</h2>
                 <div class="form-group">
                     <div class="view view-our-clients view-id-our_clients view-display-id-block_1">
                         <div class="view-header">
-                            Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы
-                            делаем всё, чтобы наше сотрудничество было долгим.
+                            Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.
                         </div>
                         <div class="view-content">
                             <div>
@@ -1130,9 +1054,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/image5.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/image5.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1150,9 +1072,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/image10.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/image10.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1161,9 +1081,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/image11.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/image11.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1172,9 +1090,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/Kubsu_logo.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/Kubsu_logo.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1183,9 +1099,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/Kubsu_logo.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/Kubsu_logo.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1194,9 +1108,7 @@
                                         <div class="views-field views-field-field-project-logo">
                                             <div class="field-content">
                                                 <picture>
-                                                    <img src="img/Kubsu_logo.png"
-                                                        alt="Кубанский Государственный Университет"
-                                                        class="img-responsive" />
+                                                    <img src="img/Kubsu_logo.png" alt="Кубанский Государственный Университет" class="img-responsive" />
                                                 </picture>
                                             </div>
                                         </div>
@@ -1210,14 +1122,12 @@
                                 <div class="view view-our-clients view-id-our_clients view-display-id-attachment_1">
                                     <div class="view-content">
                                         <div id="slick-views-our-clients-attachment-1-3" class="slick">
-                                            <div id="slick-views-our-clients-attachment-1-3-slider"
-                                                class="slick__slider">
+                                            <div id="slick-views-our-clients-attachment-1-3-slider" class="slick__slider">
                                                 <div class="slick__slide slide slide--0">
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
-                                                                    typeof="foaf:Image" class="img-responsive" />
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum" typeof="foaf:Image" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1226,8 +1136,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
-                                                                    class="img-responsive" />
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1236,9 +1145,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png"
-                                                                    alt="http://andreyparabellum.ru"
-                                                                    class="img-responsive" />
+                                                                <img src="/img/logo-estee.png" alt="http://andreyparabellum.ru" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1247,8 +1154,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="farbors.ru"
-                                                                    class="img-responsive" />
+                                                                <img src="img/image10.png" alt="farbors.ru" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1257,8 +1163,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
-                                                                    typeof="foaf:Image" class="img-responsive" />
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum" typeof="foaf:Image" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1267,8 +1172,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum"
-                                                                    class="img-responsive" />
+                                                                <img src="img/Kubsu_logo.png" alt="Ciel parfum" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1277,9 +1181,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png"
-                                                                    alt="http://andreyparabellum.ru"
-                                                                    class="img-responsive" />
+                                                                <img src="/img/logo-estee.png" alt="http://andreyparabellum.ru" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1288,8 +1190,7 @@
                                                     <div class="views-field views-field-field-project-logo">
                                                         <div class="field-content">
                                                             <picture>
-                                                                <img src="img/Kubsu_logo.png" alt="farbors.ru"
-                                                                    class="img-responsive" />
+                                                                <img src="img/image10.png" alt="farbors.ru" class="img-responsive" />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -1306,87 +1207,78 @@
                 </div>
 
             </section>
-        </div>
+            </div>
 
 
-        <footer id="contacts" class="footer" role="contentinfo">
-            <div class="container">
-                <div>
-                    <section>
-                        <div class="row">
-                            <div class="col-md-6 col-xs-12 col-sm-6">
-                                <div>
-                                    <div class="block-form-wrapper">
-                                        <div class="block-form-title">Оставить заявку на <br> поддержку сайта</div>
-                                        <div class="block-form-description">Срочно нужна поддержка сайта? Ваша команда
-                                            не успевает справиться самостоятельно или предыдущий подрядчик не справился
-                                            с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с
-                                            вами свяжется!</div>
+            <footer id="contacts" class="footer" role="contentinfo">
+                <div class="container">
+                    <div>
+                        <section>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                    <div>
+                                        <div class="block-form-wrapper">
+                                            <div class="block-form-title">Оставить заявку на <br> поддержку сайта</div>
+                                            <div class="block-form-description">Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</div>
                                             <div class="block-form-contacts">
                                                 <ul>
                                                     <li class="block-form-phone"><a href="tel:88002222673">8 800
                                                             222-26-73</a></li>
-                                                    <li class="block-form-email"><a
-                                                            href="mailto:info@drupal-coder.ru">info@drupal-coder.ru</a></li>
+                                                    <li class="block-form-email"><a href="mailto:info@drupal-coder.ru">info@drupal-coder.ru</a></li>
                                                 </ul>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-xs-12 col-sm-6">
-                                <div class="field field--form-value field--item">
-                                    <form class="forms" action="https://api.slapform.com/svetavashect@gmail.com" method="post" accept-charset="UTF-8">
-                                        <div class="form-group form-wrapper">
-                                            <div class="form-item form-type-textfield form-group">
-                                                <input class="input form-control" type="text" name="Name" placeholder="Ваше имя">
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-wrapper">
-                                            <div class="form-item form-type-textfield form-group">
-                                                <input class="input required form-control" type="text" name="Telephone" placeholder="Телефон" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-wrapper">
-                                            <div class="form-item form-type-email form-group">
-                                                <input class="input form-email required form-control" type="email"  name="Email" placeholder="E-mail" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-wrapper">
-                                            <div class="form-item form-type-textarea">
-                                                <div>
-                                                    <textarea class="input form-control" name="msg" rows="5" cols="60" placeholder="Ваш комментарий"></textarea>
+                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                    <div class="field field--form-value field--item">
+                                        <form class="forms" action="https://formcarry.com/s/Flv4k5JVLF" method="post" accept-charset="UTF-8">
+                                            <div class="form-group form-wrapper">
+                                                <div class="form-item form-type-textfield form-group">
+                                                    <input class="input form-control" type="text" name="Name" placeholder="Ваше имя">
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div
-                                            class="form-item  form-type-checkbox checkbox">
-                                            <label class="control-label option form-required">
+                                            <div class="form-group form-wrapper">
+                                                <div class="form-item form-type-textfield form-group">
+                                                    <input class="input required form-control" type="text" name="Telephone" placeholder="Телефон" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-wrapper">
+                                                <div class="form-item form-type-email form-group">
+                                                    <input class="input form-email required form-control" type="email" name="Email" placeholder="E-mail" required="required">
+                                                </div>
+                                            </div>
+                                            <div class="form-group form-wrapper">
+                                                <div class="form-item form-type-textarea">
+                                                    <div>
+                                                        <textarea class="input form-control" name="msg" rows="5" cols="60" placeholder="Ваш комментарий"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-item  form-type-checkbox checkbox">
+                                                <label class="control-label option form-required">
                                                 <input required="required" class="form-checkbox" type="checkbox" name="consent" value="1">
                                                 <span class="custom-checkbox"></span>Отправляя заявку, я даю согласие на обработку своих персональных данных.</label>
-                                        </div>
-                                        <div class="form-actions form-group form-wrapper">
-                                            <button class="button form-submit btn-primary btn" type="submit" id="edit-submit" name="submit"
-                                                value="Оставить заявку!">Оставить заявку!</button>
-                                        </div>
-                                    </form>
+                                            </div>
+                                            <div class="form-actions form-group form-wrapper">
+                                                <button class="button form-submit btn-primary btn" type="submit" id="edit-submit" name="submit" value="Оставить заявку!">Оставить заявку!</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <section id="block-copyright"
-                        class="block block-block-content clearfix">
-                        <div
-                            class="field field--name-body field--item">
-                            <p style="color: #FFFFFF; opacity: 0.5;">Проект ООО «Инитлаб», Краснодар, Россия.<br>
-                                Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
-                        </div>
-                    </section>
+                        <section id="block-copyright" class="block block-block-content clearfix">
+                            <div class="field field--name-body field--item">
+                                <p style="color: #FFFFFF; opacity: 0.5;">Проект ООО «Инитлаб», Краснодар, Россия.<br> Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </footer>
+        </div>
     </div>
 
 
@@ -1394,7 +1286,6 @@
     <script src="//cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/ajax.js"></script>
     <script src="js/history.js"></script>
 </body>
 
