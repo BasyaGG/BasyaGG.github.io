@@ -26,45 +26,45 @@
                 </div>
 
                 <!-- Это начало менюшечкииииии -->
-
-                <!-- соотыетственно самаааа навигация  -->
-                <nav role="navigation" class="navbar navbar-expand-lg navbar-light bg-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#support">ПОДДЕРЖКА DRUPAL</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#block-tariffs" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">АДМИНИСТРИРОВАНИЕ</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#cases">ПРОДВИЖЕНИЕ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">РЕКЛАМА</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#reviews">О НАС</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#reviews">ПРОЕКТЫ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacts">КОНТАКТЫ</a>
-                            </li>
-                        </ul>
+                <div class="navbar-collapse-wrapper">
+                    <div class="navbar-collapse collapse">
+                        <!-- соотыетственно самаааа навигация  -->
+                        <nav role="navigation" class="collapse navbar-collapse">
+                            <ul class="menu nav navbar-nav">
+                                <li>
+                                    <a href="#support">ПОДДЕРЖКА DRUPAL</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle" data-toggle="dropdown"><a href="#block-tariffs">АДМИНИСТРИРОВАНИЕ</a></button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">МИГРАЦИЯ</a>
+                                            </li>
+                                            <li><a href="#">БЭКАПЫ</a></li>
+                                            <li><a href="#">АУДИТ БЕЗОПАСНОСТИ</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#cases">ПРОДВИЖЕНИЕ</a>
+                                </li>
+                                <li>
+                                    <a href="">РЕКЛАМА</a>
+                                </li>
+                                <li>
+                                    <a href="#reviews">О НАС</a>
+                                </li>
+                                <li>
+                                    <a href="#reviews">ПРОЕКТЫ</a>
+                                </li>
+                                <li>
+                                    <a href="#contacts">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </nav>
-
-
+                </div>
 
 
                 <!-- ЭТО КНОПКА ДЛЯ МОБИЛЬНОЙ ВЕРСИИ (НАВИГАЦИЯ) -->
@@ -1021,8 +1021,6 @@
                 </div>
             </section>
 
-            <!-- Блок с нами работают -->
-            <!-- Требует доработку!!!! -->
             <section class="views-element-container block block-views block-views-blockour-clients-block-1" id="block-views-block-our-clients">
                 <h2 class="block-title">С нами работают</h2>
                 <div class="form-group">
