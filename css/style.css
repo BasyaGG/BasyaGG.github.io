@@ -86,14 +86,12 @@
         width: auto;
         height: auto;
     }
-    nav.navbar .dropdown:hover>.dropdown-menu {
-        display: block;
-    }
 }
 
-@media only screen and (max-device-width: 992px) {
-    nav.navbar .dropdown:hover .dropdown-menu {
-        display: none;
+@media only screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
     }
 }
 
